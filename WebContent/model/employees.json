@@ -1,0 +1,16 @@
+{
+  "employeeList" : [
+     {
+     "name" : "Devender",
+     "dept" : "Trainer"
+     },
+     {
+      "name" : "Surender",
+      "dept" : "Marketing"
+     },
+     {
+      "name" : "Mahendar",
+      "dept" : "Developer"
+     }
+  ]
+}
