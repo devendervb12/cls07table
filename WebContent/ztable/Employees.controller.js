@@ -5,9 +5,24 @@ sap.ui.controller("ztable.Employees", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf ztable.Employees
 */
-//	onInit: function() {
-//
-//	},
+	onInit: function() {
+         
+		/*var oModel = new sap.ui.model.json.JSONModel();
+		oModel.loadData("model/employees.json");
+		this.getView().setModel(oModel);*/
+		
+		var oModel = new sap.ui.model.xml.XMLModel();
+		oModel.loadData("model/employees.xml");
+		this.getView().setModel(oModel);
+		
+		sap.ui.localResources("i18n");
+		var oRModel = new sap.ui.model.resource.ResourceModel({
+			bundleName : "i18n.mySource"
+		});
+		this.getView().setModel(oRModel, "m2");
+		
+		
+	},
 
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

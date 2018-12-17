@@ -2,15 +2,18 @@
   "employeeList" : [
      {
      "name" : "Devender",
-     "dept" : "Trainer"
+     "dept" : "SAP",
+     "role" : "Trainer"
      },
      {
       "name" : "Surender",
-      "dept" : "Marketing"
+      "dept" : "Marketing",
+      "role" : "Ads"
      },
      {
       "name" : "Mahendar",
-      "dept" : "Developer"
+      "dept" : "Java",
+      "role" : "Developer"
      }
   ]
 }
